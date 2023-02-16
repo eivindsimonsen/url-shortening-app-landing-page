@@ -1,0 +1,24 @@
+.fa-bars,
+.fa-xmark {
+  display: none;
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  &-routes {
+    display: flex;
+    flex-grow: 1;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+  }
+
+  &-login {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+}
