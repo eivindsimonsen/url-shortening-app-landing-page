@@ -1,0 +1,12 @@
+import "./sass/style.scss";
+import Nav from "./components/Nav";
+
+function App() {
+  return (
+    <div className="container">
+      <Nav />
+    </div>
+  );
+}
+
+export default App;
