@@ -1,11 +1,35 @@
-.app {
+/* .app {
   * {
     border: 1px solid red;
-    margin: 5px;
   }
+} */
+
+.app {
+  overflow: hidden;
 }
 
 body {
   font-family: $fontFamily;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: $fontWeightBold;
+}
+
+.cta {
+  padding: 15px 25px;
+  border: none;
+  background-color: $primaryColor;
+  color: #fff;
+  font-weight: $fontWeightBold;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: lighten($color: $primaryColor, $amount: 15);
+  }
 }
