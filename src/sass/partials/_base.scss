@@ -50,6 +50,11 @@ h5 {
 
   &-copied {
     background-color: $primaryAccentColor;
+
+    &:hover {
+      background-color: $primaryAccentColor;
+      cursor: auto;
+    }
   }
 }
 
