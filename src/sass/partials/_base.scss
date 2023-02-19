@@ -9,13 +9,15 @@
     overflow: hidden;
   }
 
-  & > .container {
-    // Styles makes sure the background color goes beyond the container width
-    & > .nav,
-    & > .hero-container {
-      background-color: #fff;
-      box-shadow: 0 0 0 100vmax #fff;
-      clip-path: inset(0 -100vmax);
+  @media (min-width: 768px) {
+    & > .container {
+      // Styles makes sure the background color goes beyond the container width
+      & > .nav,
+      & > .hero-container {
+        background-color: #fff;
+        box-shadow: 0 0 0 100vmax #fff;
+        clip-path: inset(0 -100vmax);
+      }
     }
   }
 }
