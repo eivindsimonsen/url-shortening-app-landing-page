@@ -1,16 +1,28 @@
 /* .app {
   * {
-    border: 1px solid red;
+    border: 1px solid lightgray;
   }
 } */
 
 .app {
-  overflow: hidden;
+  @media (max-width: 580px) {
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    & > .nav,
+    & > .hero-container {
+      background-color: #fff;
+      box-shadow: 0 0 0 100vmax #fff;
+      clip-path: inset(0 -100vmax);
+    }
+  }
 }
 
 body {
   font-family: $fontFamily;
   box-sizing: border-box;
+  background-color: #f7f6f6;
 }
 
 h1,
@@ -22,7 +34,7 @@ h5 {
 }
 
 .cta {
-  padding: 15px 25px;
+  padding: 14px 33px;
   border: none;
   background-color: $primaryColor;
   color: #fff;
@@ -32,4 +44,13 @@ h5 {
   &:hover {
     background-color: lighten($color: $primaryColor, $amount: 15);
   }
+
+  &-copied {
+    background-color: $primaryAccentColor;
+  }
+}
+
+p {
+  color: $bgAccent;
+  margin-top: 17px;
 }
