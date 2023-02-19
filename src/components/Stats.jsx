@@ -10,6 +10,7 @@ function Stats() {
         <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
       </div>
       <div className="stats-container-points">
+        <hr className="stats-line" />
         <div>
           <img src={recogImage} alt="Brand recognition icon" />
           <h3>Brand Recognition</h3>
