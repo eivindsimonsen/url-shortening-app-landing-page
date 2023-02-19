@@ -1,15 +1,10 @@
 .banner-container {
-  // Styles makes sure the background color goes beyond the container width
   background-color: $primaryAccentColor;
-  box-shadow: 0 0 0 100vmax $primaryAccentColor;
-  clip-path: inset(0 -100vmax);
-  // Was a tiny 1px white line between elements, this fixed it
-  transform: translateY(1px);
-
   color: #fff;
   padding: 70px 0px;
   text-align: center;
   position: relative;
+  margin-top: 140px;
 
   & > * {
     margin: 15px;
@@ -17,6 +12,10 @@
 
   h4 {
     font-size: 1.6rem;
+
+    @media (min-width: 992px) {
+      font-size: 2.2rem;
+    }
   }
 
   h4,
@@ -28,7 +27,27 @@
   img {
     position: absolute;
     top: 0;
-    right: -10px;
+    left: 0;
+    right: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-img-mobile {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-img-desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
 }

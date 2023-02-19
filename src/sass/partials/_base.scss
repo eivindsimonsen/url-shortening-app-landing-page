@@ -9,7 +9,7 @@
     overflow: hidden;
   }
 
-  @media (min-width: 768px) {
+  & > .container {
     // Styles makes sure the background color goes beyond the container width
     & > .nav,
     & > .hero-container {
@@ -53,7 +53,7 @@ h5 {
 
 p {
   color: $bgAccent;
-  margin-top: 17px;
+  font-size: clamp(16px, 2vw, 18px);
 }
 
 li {

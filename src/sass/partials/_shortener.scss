@@ -1,5 +1,9 @@
 .shortener {
   transform: translateY(-110px);
+
+  @media (min-width: 992px) {
+    transform: translateY(-90px);
+  }
 }
 
 .shortener-container {
@@ -10,6 +14,19 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+
+  @media (min-width: 992px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0px;
+  }
+
+  @media (min-width: 1400px) {
+    button {
+      flex-basis: 13%;
+    }
+  }
 
   & > * {
     margin: 10px 0px;
@@ -23,6 +40,11 @@
     padding: 13px;
     border-radius: 5px;
     border: none;
+
+    @media (min-width: 992px) {
+      flex-basis: 78%;
+      margin-right: 30px;
+    }
   }
 
   input,
@@ -39,11 +61,28 @@
       font-weight: $fontWeightMedium;
     }
 
-    &-message {
+    &-message-mobile,
+    &-message-desktop {
       color: $alertColor;
       font-style: italic;
       margin-top: 0px;
       margin-bottom: 10px;
+      flex-basis: 93%;
+    }
+
+    &-message-mobile {
+      display: block;
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    &-message-desktop {
+      display: none;
+      @media (min-width: 992px) {
+        display: flex;
+        z-index: 3;
+      }
     }
   }
 
@@ -56,11 +95,17 @@
   }
 
   &-bg-image-mobile {
-    // display: none;
+    @media (min-width: 992px) {
+      display: none;
+    }
   }
 
   &-bg-image-desktop {
-    display: none;
+    height: 100%;
+    width: 100%;
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 }
 
@@ -68,18 +113,38 @@
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   font-weight: $fontWeightMedium;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 20px;
+    font-size: 1.15rem;
+  }
 
   & > .cta {
     border-radius: 5px;
     padding: 10px;
     margin-top: 15px;
+
+    @media (min-width: 992px) {
+      flex-basis: 15%;
+      margin-top: 0px;
+    }
   }
 
   & > *:nth-child(3) {
     color: $primaryColor;
+  }
+
+  &-added {
+    flex-basis: 100%;
+  }
+
+  &-rendered {
+    margin-right: 20px;
   }
 }

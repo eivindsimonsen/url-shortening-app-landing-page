@@ -8,11 +8,13 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="app container">
-      <Nav />
-      <Hero />
-      <Shortener />
-      <Stats />
+    <div className="app">
+      <div className="container">
+        <Nav />
+        <Hero />
+        <Shortener />
+        <Stats />
+      </div>
       <Banner />
       <Footer />
     </div>

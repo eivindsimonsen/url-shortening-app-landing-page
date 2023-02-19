@@ -6,15 +6,16 @@ function Shortener() {
     <div className="shortener">
       <section className="shortener-container">
         <input className="input-error" type="text" placeholder="Shorten a link here..." />
-        <div className="input-error-message">Please add a link</div>
+        <div className="input-error-message-mobile">Please add a link</div>
         <button className="cta">Shorten it!</button>
+        <div className="input-error-message-desktop">Please add a link</div>
         <img className="shortener-container-bg-image-mobile" src={bgImage} alt="light purple bubble clouds as tinted behind the content" />
         <img className="shortener-container-bg-image-desktop" src={bgImageDesktop} alt="light purple bubble clouds as tinted behind the content" />
       </section>
       <section className="output-links">
-        <div>https://megalinkadded.com</div>
+        <div className="output-links-added">https://megalinkadded.com</div>
         <hr />
-        <div>https://newmegalinkgiven</div>
+        <div className="output-links-rendered">https://newmegalinkgiven</div>
         <button className="cta">Copy</button>
       </section>
     </div>
