@@ -20,7 +20,7 @@ function Nav() {
           <li>Pricing</li>
           <li>Resources</li>
         </ul>
-        <hr />
+        <hr className="nav-line" />
         <div className="nav-login">
           <li>Login</li>
           <button className="cta">Sign up</button>
