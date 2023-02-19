@@ -8,8 +8,8 @@ function Shortener() {
         <input className="input-error" type="text" placeholder="Shorten a link here..." />
         <div className="input-error-message">Please add a link</div>
         <button className="cta">Shorten it!</button>
-        <img className="shortener-container-bg-image-mobile" src={bgImage} alt="" />
-        <img className="shortener-container-bg-image-desktop" src={bgImageDesktop} alt="" />
+        <img className="shortener-container-bg-image-mobile" src={bgImage} alt="light purple bubble clouds as tinted behind the content" />
+        <img className="shortener-container-bg-image-desktop" src={bgImageDesktop} alt="light purple bubble clouds as tinted behind the content" />
       </section>
       <section className="output-links">
         <div>https://megalinkadded.com</div>

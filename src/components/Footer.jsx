@@ -28,7 +28,7 @@ function Footer() {
         <li>Careers</li>
         <li>Contact</li>
       </div>
-      <div>
+      <div className="footer-container-socials">
         <i className="fa-brands fa-square-facebook"></i>
         <i className="fa-brands fa-twitter"></i>
         <i className="fa-brands fa-pinterest"></i>

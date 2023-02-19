@@ -10,6 +10,7 @@
   }
 
   @media (min-width: 768px) {
+    // Styles makes sure the background color goes beyond the container width
     & > .nav,
     & > .hero-container {
       background-color: #fff;
@@ -53,4 +54,8 @@ h5 {
 p {
   color: $bgAccent;
   margin-top: 17px;
+}
+
+li {
+  list-style-type: none;
 }
