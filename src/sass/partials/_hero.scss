@@ -1,5 +1,28 @@
 .hero-container {
-  img {
-    width: 524px;
+  padding-bottom: 100px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 200px;
+  }
+
+  &-image {
+    text-align: center;
+
+    img {
+      width: 524px;
+    }
+  }
+
+  &-content {
+    text-align: center;
+    margin: 40px 0px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    button {
+      margin: 10px 0px 40px 0px;
+    }
   }
 }
