@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Specifically the setUrls function, where I learnt to store content in an array, by pushing a new object with the spread operator.
+Specifically the setUrls state hook, where I learnt to store content in an array, by pushing a new object with the spread operator.
 
 ```JSX
 const shortenUrl = async () => {
