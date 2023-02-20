@@ -11,22 +11,28 @@ function Footer() {
       </svg>
       <div>
         <h5>Features</h5>
-        <li>Link Shortening</li>
-        <li>Branded Links</li>
-        <li>Analytics</li>
+        <ul>
+          <li>Link Shortening</li>
+          <li>Branded Links</li>
+          <li>Analytics</li>
+        </ul>
       </div>
       <div>
         <h5>Resources</h5>
-        <li>Blog</li>
-        <li>Developers</li>
-        <li>Support</li>
+        <ul>
+          <li>Blog</li>
+          <li>Developers</li>
+          <li>Support</li>
+        </ul>
       </div>
       <div>
         <h5>Company</h5>
-        <li>About</li>
-        <li>Our Team</li>
-        <li>Careers</li>
-        <li>Contact</li>
+        <ul>
+          <li>About</li>
+          <li>Our Team</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
       </div>
       <div className="footer-container-socials">
         <i className="fa-brands fa-square-facebook"></i>

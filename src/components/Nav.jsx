@@ -22,7 +22,9 @@ function Nav() {
         </ul>
         <hr className="nav-line" />
         <div className="nav-login">
-          <li>Login</li>
+          <ul>
+            <li>Login</li>
+          </ul>
           <button className="cta">Sign up</button>
         </div>
       </div>
