@@ -10,7 +10,7 @@
   }
 
   @media (min-width: 768px) {
-    & > .container {
+    & > main > .container {
       // Styles makes sure the background color goes beyond the container width
       & > .nav,
       & > .hero-container {

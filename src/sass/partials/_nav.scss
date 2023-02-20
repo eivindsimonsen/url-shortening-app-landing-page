@@ -49,6 +49,10 @@
       list-style-type: none;
       margin: 0px;
       gap: 20px;
+
+      @media (min-width: 768px) {
+        margin: 0px 0px 0px 30px;
+      }
     }
 
     &.active {
